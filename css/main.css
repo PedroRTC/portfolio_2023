@@ -1,0 +1,19 @@
+/*  
+background main: #231F20 ;
+background secondary : #343232 ;
+background emphasis : #FDC971 ;
+color: #fffff ;
+*/
+
+
+/*
+
+font titles: font-family: 'Josefin Sans', sans-serif ;
+font secondary: font-family: 'Dosis', sans-serif ;
+
+*/
+
+body{
+    background-color:#231F20 ;
+    color: #ffff;
+}
