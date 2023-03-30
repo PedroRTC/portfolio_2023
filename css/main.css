@@ -5,7 +5,6 @@ background emphasis : #FDC971 ;
 color: #fffff ;
 */
 
-
 /*
 
 font titles: font-family: 'Josefin Sans', sans-serif ;
@@ -13,7 +12,58 @@ font secondary: font-family: 'Dosis', sans-serif ;
 
 */
 
-body{
-    background-color:#231F20 ;
-    color: #ffff;
+/* estilos gerais*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+}
+
+body {
+  background-color: #231f20;
+  color: #ffff;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.d_flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* estilos header*/
+
+header {
+  height: 100vh;
+  width: 100%;
+}
+
+.menu_top {
+  height: 70px;
+  justify-content: space-between;
+}
+
+.img_logo_header {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  transform: translateX(14px);
+  z-index: -1;
+}
+
+.container_buttons_top {
+  gap: 30px;
+}
+
+.container_buttons_top button {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 14pt;
+  cursor: pointer;
 }
