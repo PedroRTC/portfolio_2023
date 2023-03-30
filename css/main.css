@@ -21,7 +21,7 @@ font secondary: font-family: 'Dosis', sans-serif ;
 
 main {
   margin: auto;
-  width: 90%;
+  width: 80%;
 }
 
 body {
@@ -46,6 +46,7 @@ header {
 
 .menu_top {
   height: 70px;
+  margin-bottom: 30px;
   justify-content: space-between;
 }
 
@@ -110,7 +111,13 @@ header {
 }
 
 .container_profile {
-  padding: 30px 0px;
+    margin: auto;
+    width:100%;
+    text-align: center;
+    padding: 15px 0px;
+    gap: 10px;
+
+   
 }
 
 .section_networks {
@@ -131,17 +138,19 @@ header {
   border-radius: 115px;
   padding: 4px 5px;
   border: 1px solid #fdc971;
+ 
 }
 
 .img_profile {
   width: 230px;
-  height: 320px;
+  height: 310px;
   border-radius: 110px;
   border: 1px solid #fdc971;
 }
 
 .section_more {
   cursor: pointer;
+  padding: 10px 5px;
 }
 
 .section_more i {
@@ -154,4 +163,30 @@ header {
   padding: 10px 0px;
   padding-left: 3px;
   font-weight: 500;
+}
+.section_menu_bottom{
+  margin: auto;
+justify-content: center;
+  padding: 10px 0px;
+  text-align: center;
+  position: fixed;
+  width: 80%;
+  bottom:0px;
+}
+.menu_bottom{
+    margin: auto;
+    border-radius: 50px;
+    align-items: center;
+    width:300px;
+    height:50px ;
+    background-color: #34323278;
+    font-size: 14pt;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(220, 220, 220, 0.1);
+   
+}
+.menu_bottom img{
+    width:20px;
+    height:20px ;
+
 }
