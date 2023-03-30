@@ -39,6 +39,7 @@ body {
 /* estilos header*/
 
 header {
+  text-align: center;
   height: 100vh;
   width: 100%;
 }
@@ -46,6 +47,7 @@ header {
 .menu_top {
   height: 70px;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .img_logo_header {
@@ -64,6 +66,48 @@ header {
   border: none;
   color: white;
   background-color: transparent;
-  font-size: 14pt;
+  font-size: 16pt;
   cursor: pointer;
+}
+
+.container_presentation_header{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title_name{
+    font-size: 25pt;
+}
+
+.container_presentation_header p{
+    font-family: 'Dosis', sans-serif;
+}
+
+.section_buttons_presentation{
+  gap:20px;
+  margin-top: 10px;
+ 
+}
+
+.section_buttons_presentation button{
+    border:none ;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #FDC971;
+    letter-spacing:1px;
+    
+    font-family: 'Josefin Sans', sans-serif ;
+}
+
+.button_cv{
+    background: #FDC971;
+    font-weight: 600;
+    
+}
+
+.button_contato{
+    background: #231f20;
+    color: white;
 }
