@@ -25,7 +25,8 @@ main {
 }
 
 body {
-  background-color:#231f20;
+  margin: auto;
+  background-color: #231f20;
   color: white;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -220,7 +221,7 @@ header {
   margin: auto;
   border-radius: 50px;
   align-items: center;
-  width: 300px;
+  width: 280px;
   height: 50px;
   background-color: #343232ac;
   font-size: 14pt;
