@@ -25,8 +25,8 @@ main {
 }
 
 body {
-  background-color:#231f20;
-  color:white;
+  background-color: #231f20;
+  color: white;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -36,10 +36,10 @@ body {
   align-items: center;
 }
 
-.color{
- color:white;
+.color {
+  color: white;
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ header {
   z-index: -1;
 }
 
-.title_logo{
+.title_logo {
   letter-spacing: 2px;
 }
 
@@ -78,10 +78,9 @@ header {
   background-color: transparent;
   font-size: 16pt;
   cursor: pointer;
-  
 }
 
-.container_buttons_top button:hover{
+.container_buttons_top button:hover {
   color: #fdc971;
 }
 
@@ -92,12 +91,11 @@ header {
 
 .title_name {
   font-size: 25pt;
- 
 }
 
 .container_presentation_header p {
   font-family: "Dosis", sans-serif;
-  font-weight:500;
+  font-weight: 500;
   font-size: 14pt;
 }
 
@@ -118,9 +116,9 @@ header {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.section_buttons_presentation button:hover{
-   background-color: #343232;
-   color: #fdc971;
+.section_buttons_presentation button:hover {
+  background-color: #343232;
+  color: #fdc971;
 }
 
 .button_cv {
@@ -155,9 +153,9 @@ header {
   border: 1px solid #fdc971;
 }
 
-.section_networks img:hover{
-   background-color:#231f20;
-} 
+.section_networks img:hover {
+  background-color: #231f20;
+}
 
 .section_img_profile {
   border-radius: 115px;
@@ -176,30 +174,29 @@ header {
   cursor: pointer;
   padding: 10px 5px;
   border-radius: 20px;
-
 }
 
-.section_more:hover{
+.section_more:hover {
   background-color: #3432327e;
 }
 
 .section_more i {
   display: inline-block;
-  color: #FDC971;
+  color: #fdc971;
   animation: animar linear infinite 2s;
 }
 
-@keyframes animar{
-  0%{
-    transform:translateY(0px);
+@keyframes animar {
+  0% {
+    transform: translateY(0px);
   }
 
-  50%{
-    transform:translateY(5px)
+  50% {
+    transform: translateY(5px);
   }
 
-  100%{
-    transform:translateY(0px)
+  100% {
+    transform: translateY(0px);
   }
 }
 .title_more {
@@ -233,20 +230,19 @@ header {
 .menu_bottom img {
   width: 20px;
   height: 20px;
-  
 }
 
-.items_menu_bottom{
-  display:flex;
+.items_menu_bottom {
+  display: flex;
   align-items: center;
   justify-content: space-around;
- 
-  width:32px ;
+
+  width: 32px;
   height: 32px;
   border-radius: 50%;
   transition: all 0.5s;
 }
 
-.items_menu_bottom:hover{
-  background-image: linear-gradient(45deg,#231F20,#231F20,#FDC971);
+.items_menu_bottom:hover {
+  background-image: linear-gradient(45deg, #231f20, #231f20, #fdc971);
 }
