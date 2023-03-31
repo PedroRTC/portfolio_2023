@@ -25,7 +25,7 @@ main {
 }
 
 body {
-  background-color: #231f20;
+  background-color:#231f20;
   color: white;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -53,7 +53,7 @@ header {
 
 .menu_top {
   height: 70px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   justify-content: space-between;
 }
 
@@ -182,7 +182,7 @@ header {
 
 .section_more i {
   display: inline-block;
-  color: #fdc971;
+  color: #fda100;
   animation: animar linear infinite 2s;
 }
 
