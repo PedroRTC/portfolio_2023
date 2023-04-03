@@ -176,6 +176,7 @@
 
 .selection{
   border: 1px solid #fdc971;
+  background-color:#231F20 ;
 }
 
 @media screen and (max-width: 800px) {
