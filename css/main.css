@@ -46,6 +46,11 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
+.all_sections {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
 .color {
   color: white;
 }
@@ -62,7 +67,7 @@ p {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   letter-spacing: 1px;
 }
 

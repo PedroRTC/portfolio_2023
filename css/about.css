@@ -62,10 +62,11 @@
   border-radius: 10px;
   display: flex;
   scroll-snap-type: x mandatory;
-  overflow:hidden;
+  overflow: hidden;
+  gap: 20px;
   opacity: 1;
- transition: all 0.3s;
- scroll-behavior: smooth;
+  transition: all 0.3s;
+  scroll-behavior: smooth;
 }
 
 .carrossel_description div {
@@ -75,19 +76,18 @@
   height: 80%;
   padding: 10px 20px;
   scroll-snap-align: start;
-  
 }
 
-.carrossel_description div::-webkit-scrollbar{
+.carrossel_description div::-webkit-scrollbar {
   width: 5px;
 }
 
-.carrossel_description div::-webkit-scrollbar-thumb{
+.carrossel_description div::-webkit-scrollbar-thumb {
   background-color: #fdc971;
 }
 
-.carrossel_description hr{
-  width:20px;
+.carrossel_description hr {
+  width: 20px;
   height: 1px;
   border: none;
   background-color: #fdc971;
@@ -99,13 +99,12 @@
   font-size: 14pt;
 }
 
-.anchor_description{
+.anchor_description {
   padding: 0;
   line-height: 0px;
   width: 100%;
   text-align: center;
   color: transparent;
-  
 }
 
 .information {
@@ -117,22 +116,18 @@
   color: gainsboro;
 }
 
-
-.qualifications{
+.qualifications {
   line-height: 30px;
   letter-spacing: 1px;
-  
 }
-.history{
-  overflow-y:auto;
+.history {
+  overflow-y: auto;
   letter-spacing: 1px;
 }
 
-.history h4{
-  padding:5px 0px ;
+.history h4 {
+  padding: 5px 0px;
 }
-
-
 
 .container_about_img {
   margin: auto;
@@ -161,25 +156,25 @@
 .img_about img {
   border-radius: 20px;
   transform: rotateZ(-10deg);
-  width: 300px;
+  width: 250px;
 }
 
 .img_about::before {
   content: "";
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: #fdc971;
   z-index: -1;
   border-radius: 20px;
 }
 
-.selection{
+.selection {
   border: 1px solid #fdc971;
-  background-color:#231F20 ;
+  background-color: #231f20;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   main {
     width: 90%;
   }

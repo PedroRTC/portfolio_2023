@@ -1,0 +1,50 @@
+[
+    {
+        "skills":"HTML",
+        "percentage":"85%",
+        "img":"img/skills/html-habilidades.png"
+
+    },
+
+    {
+        "skills":"CSS",
+        "percentage":"75%",
+        "img":"img/skills/css-habilidades.png"
+
+    },
+
+    {
+        "skills":"BOOTSTRAP",
+        "percentage":"60%",
+        "img":"img/skills/bootstrap-habilidades.png"
+
+    },
+
+    {
+        "skills":"TAILWIND",
+        "percentage":"70%",
+        "img":"img/skills/tailwind-habilidades.png"
+
+    },
+
+    {
+        "skills":"JAVASCRIPT",
+        "percentage":"75%",
+        "img":"img/skills/javascript-habilidades.png"
+
+    },
+
+    {
+        "skills":"REACTJS",
+        "percentage":"45%",
+        "img":"img/skills/react-habilidades.png"
+
+    },
+
+    {
+        "skills":"GIT E GITHUB",
+        "percentage":"70%",
+        "img":"img/skills/github-habilidades.png"
+
+    }
+]

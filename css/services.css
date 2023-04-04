@@ -1,0 +1,40 @@
+.container_services {
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 2px solid #fdc971;
+  border-right: 2px solid #fdc971;
+  gap: 20px;
+}
+
+.container_services div {
+  display: flex;
+  align-items: flex-end;
+  width: 180px;
+  padding: 10px 20px;
+  height: 230px;
+  background-color: #343232;
+  border-radius: 10px;
+  border-bottom: 2px solid #fdc971;
+}
+
+.services {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.services h4 {
+  width: 180px;
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 14pt;
+  line-height: 20px;
+}
+
+.services p {
+  color: #fdc971;
+}

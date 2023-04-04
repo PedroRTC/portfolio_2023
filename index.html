@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pedro</title>
-    <link rel="shortcut icon" href="img/logo-topo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo/logo-topo.png" type="image/x-icon" />
 
     <!----estilo css---->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/animation.css" />
     <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/services.css">
 
     <!--icones bootstrap-->
     <link
@@ -35,7 +37,7 @@
       <header>
         <section class="menu_top">
           <div class="container_logo">
-            <img src="img/logo-topo.png" class="img_logo_header" alt="" />
+            <img src="img/logo/logo-topo.png" class="img_logo_header" alt="" />
             <p class="title_logo">Pedro</p>
           </div>
 
@@ -57,12 +59,16 @@
 
         <div class="container_profile">
           <section class="section_networks d_flex">
-            <a href=""><img src="img/linkedin-header.png" alt="" /></a>
-            <a href=""><img src="img/github-header.png" alt="" /></a>
-            <a href=""><img src="img/instagram-header.png" alt="" /></a>
+            <a href=""
+              ><img src="img//networks/linkedin-header.png" alt=""
+            /></a>
+            <a href=""><img src="img/networks/github-header.png" alt="" /></a>
+            <a href=""
+              ><img src="img/networks/instagram-header.png" alt=""
+            /></a>
           </section>
           <section class="section_img_profile d_flex">
-            <img src="img/perfil.png" class="img_profile" alt="" />
+            <img src="img/profile/perfil.png" class="img_profile" alt="" />
           </section>
 
           <section class="section_more">
@@ -76,50 +82,48 @@
         <section class="section_menu_bottom">
           <nav class="menu_bottom d_flex">
             <a href="#" class="items_menu_bottom"
-              ><img src="img/botao-home.png" alt=""
+              ><img src="img/menu/home.png" alt=""
             /></a>
             <a href="#" class="items_menu_bottom"
-              ><img src="img/sobre-mim.png" alt=""
+              ><img src="img/menu/sobre-mim.png" alt=""
             /></a>
             <a href="#" class="items_menu_bottom"
-              ><img src="img/habilidade.png" alt=""
+              ><img src="img/menu/habilidade.png" alt=""
             /></a>
             <a href="#" class="items_menu_bottom"
-              ><img src="img/ordem-de-servico.png" alt=""
+              ><img src="img/menu/serviços.png" alt=""
             /></a>
             <a href="#" class="items_menu_bottom"
-              ><img src="img/portfolio.png" alt=""
+              ><img src="img/menu/portfolio.png" alt=""
             /></a>
             <a href="" class="items_menu_bottom"
-              ><img src="img/balao-de-bate-papo.png" alt=""
+              ><img src="img/menu/mensagem.png" alt=""
             /></a>
           </nav>
         </section>
       </header>
 
       <!---conteúdo sobre min---->
-      <section class="section_about_me">
+      <section class="section_about_me all_sections">
         <div class="container_title">
           <p>introduce men</p>
           <h2>Sobre mim</h2>
         </div>
 
         <section class="container_about_me container_display">
-          
           <div class="description__about">
-
             <section class="menu_description">
               <a class="item_menu_description" href="#INFORMATION">
-                <img src="img/sobre-mim.png" alt="" />
+                <img src="img/menu/sobre-mim.png" alt="" />
                 <h3>Informações</h3>
               </a>
 
               <a class="item_menu_description" href="#QUALIFICATIONS">
-                <img src="img/qualificacao.png" alt="" />
+                <img src="img/menu/qualificacao.png" alt="" />
                 <h3>Qualificações</h3>
               </a>
               <a class="item_menu_description" href="#HISTORY">
-                <img src="img/historia.png" alt="" />
+                <img src="img/menu/historia.png" alt="" />
                 <h3>Historia</h3>
               </a>
             </section>
@@ -219,14 +223,53 @@
               e desenvolvimento de interfaces de paginas web.
             </p>
             <section class="img_about">
-              <img src="img/perfil-sobre.png" alt="" />
+              <img src="img/profile/perfil-sobre.png" alt="" />
             </section>
           </div>
         </section>
       </section>
       <!--conteúdo habilidades--->
+      <section class="section_skills all_sections">
+        <div class="container_title">
+          <p>my skills</p>
+          <h2>habilidades</h2>
+        </div>
 
+        <div class="container_skills"></div>
+        <h4>Ferramentas</h4>
+        <section class="tools">
+          <img src="img/tools/vscode.png" alt="">
+          <img src="img/tools/github-desktop.png" alt="">
+          <img src="img/tools/github.png" alt="">
+          <img src="img/tools/figma.png" alt="">
+          <img src="img/tools/canva.png" alt="">
+        </section>
+      </section>
       <!----conteúdo serviços---->
+
+      <section class="section_services all_sections">
+        <div class="container_title">
+          <p>my services</p>
+          <h2>Seviços</h2>
+        </div>
+
+        <div class="container_services container_display ">
+            <div class="front">
+              <section class="services">
+                <h4>Desenvolvedor <br>Front end</h4>
+                <p>Ver mais</p>
+              </section>
+             
+            </div>
+            <div class="design">
+              <section class="services">
+                <h4>Design<br> gráfico</h4>
+                <p>Ver mais</p>
+              </section>
+             
+            </div>
+        </div>
+      </section>
 
       <!----conteúdo contato----->
 
@@ -240,6 +283,7 @@
     <!------javascript--------->
 
     <script src="js/http.js"></script>
+    <script src="js/skills.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animation.js"></script>
