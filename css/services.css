@@ -1,6 +1,6 @@
 .container_services {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -36,5 +36,12 @@
 }
 
 .services p {
+  display: flex;
+  align-items: center;
   color: #fdc971;
+}
+.services i{
+
+  font-size: 16pt;
+  padding: 3px;
 }

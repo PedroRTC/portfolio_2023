@@ -2,6 +2,12 @@
   height: auto;
   margin-bottom: 50px;
 }
+
+.section_skills h4 {
+  border-bottom: 1px solid #fdc971;
+  width: 130px;
+  margin-bottom: 10px;
+}
 .container_skills {
   display: flex;
   margin: 30px 0px;
@@ -42,7 +48,6 @@
 }
 
 .tools {
-  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-around;
