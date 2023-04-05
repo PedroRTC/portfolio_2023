@@ -14,3 +14,7 @@ function fetchJson(url) {
   function respSkills(){
     return fetchJson("json/skills.json")
   }
+
+  function respProjects(){
+    return fetchJson("json/projects.json")
+  }

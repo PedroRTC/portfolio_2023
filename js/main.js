@@ -1,13 +1,20 @@
-let item_menu_description0 = document.getElementsByClassName("item_menu_description")[0];
 let item_menu_description = document.querySelectorAll(".item_menu_description");
 let carrossel_description = document.querySelector(".carrossel_description");
 
-item_menu_description0.classList.add("selection");
+let item_menu_projects = document.querySelectorAll(".menu_projects button");
+
+item_menu_projects.forEach((item_projects) => {
+  item_projects.addEventListener("click", () => {
+    let class_item_projects = "selection_projects";
+    selectItem(item_projects, class_item_projects);
+  });
+});
 
 item_menu_description.forEach((item_description) => {
   item_description.addEventListener("click", effectDescriptionAbout);
   item_description.addEventListener("click", () => {
-    selectItem(item_description);
+    let class_item_description = "selection";
+    selectItem(item_description, class_item_description);
   });
 });
 
@@ -20,17 +27,17 @@ function effectDescriptionAbout() {
   }, 400);
 }
 
-function selectItem(item) {
-  item.classList.add("selection");
-  item.addEventListener("click", removeItem(item));
+function selectItem(item, classItem) {
+  item.classList.add(classItem);
+  item.addEventListener("click", removeItem(item, classItem));
 }
 
-function removeItem(item) {
-  let itemSelection = document.querySelectorAll(".selection");
+function removeItem(item, classItem) {
+  let itemSelection = document.querySelectorAll(`.${classItem}`);
   for (const i of itemSelection) {
     if (i) {
-      i.classList.remove("selection");
-      item.classList.add("selection");
+      i.classList.remove(classItem);
+      item.classList.add(classItem);
     }
   }
 }

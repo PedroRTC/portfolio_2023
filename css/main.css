@@ -22,6 +22,7 @@ font secondary: font-family: 'Dosis', sans-serif ;
 main {
   margin: auto;
   width: 80%;
+
 }
 
 body {
@@ -292,4 +293,20 @@ header {
 
 .items_menu_bottom:hover {
   background-image: linear-gradient(45deg, #231f20, #231f20, #fdc971);
+}
+
+
+.section_contact{
+  width:100%;
+  height:300px;
+  background-color:#0d0902;
+  border-radius:10px;
+}
+
+.contact{
+  background-color:#343232;
+  padding: 10px 15px;
+  border-radius:20px;
+  letter-spacing: 2px;
+  color: #fdc971;
 }

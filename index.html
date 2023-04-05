@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pedro</title>
-    <link rel="shortcut icon" href="img/logo/logo-topo.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="img/logo/logo-topo.png"
+      type="image/x-icon"
+    />
 
     <!----estilo css---->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/animation.css" />
     <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/services.css" />
 
     <!--icones bootstrap-->
     <link
@@ -113,7 +117,7 @@
         <section class="container_about_me container_display">
           <div class="description__about">
             <section class="menu_description">
-              <a class="item_menu_description" href="#INFORMATION">
+              <a class="item_menu_description selection" href="#INFORMATION">
                 <img src="img/menu/sobre-mim.png" alt="" />
                 <h3>Informações</h3>
               </a>
@@ -228,6 +232,7 @@
           </div>
         </section>
       </section>
+
       <!--conteúdo habilidades--->
       <section class="section_skills all_sections">
         <div class="container_title">
@@ -238,42 +243,66 @@
         <div class="container_skills"></div>
         <h4>Ferramentas</h4>
         <section class="tools">
-          <img src="img/tools/vscode.png" alt="">
-          <img src="img/tools/github-desktop.png" alt="">
-          <img src="img/tools/github.png" alt="">
-          <img src="img/tools/figma.png" alt="">
-          <img src="img/tools/canva.png" alt="">
+          <img src="img/tools/vscode.png" alt="" />
+          <img src="img/tools/github-desktop.png" alt="" />
+          <img src="img/tools/github.png" alt="" />
+          <img src="img/tools/figma.png" alt="" />
+          <img src="img/tools/canva.png" alt="" />
         </section>
       </section>
-      <!----conteúdo serviços---->
 
+      <!----conteúdo serviços---->
       <section class="section_services all_sections">
         <div class="container_title">
           <p>my services</p>
-          <h2>Seviços</h2>
+          <h2>Serviços</h2>
         </div>
 
-        <div class="container_services container_display ">
-            <div class="front">
-              <section class="services">
-                <h4>Desenvolvimento <br>Front end</h4>
-                <p>Ver mais<i class="bi bi-arrow-right-short"></i></p>
-              </section>
-             
-            </div>
-            <div class="design">
-              <section class="services">
-                <h4>Design<br> gráfico</h4>
-                <p>Ver mais<i class="bi bi-arrow-right-short"></i></p>
-              </section>
-             
-            </div>
+        <div class="container_services container_display">
+          <div class="front">
+            <section class="services">
+              <h4>Desenvolvimento <br />Front end</h4>
+              <p>Ver mais<i class="bi bi-arrow-right-short"></i></p>
+            </section>
+          </div>
+          <div class="design">
+            <section class="services">
+              <h4>
+                Design<br />
+                gráfico
+              </h4>
+              <p>Ver mais<i class="bi bi-arrow-right-short"></i></p>
+            </section>
+          </div>
         </div>
       </section>
 
       <!----conteúdo contato----->
+      <section class="section_contact container_display">
+        <div class="contact">
+          <a><i class="bi bi-whatsapp"></i>(85)98899-6987</a>
+        </div>
+      </section>
 
       <!---conteúdo projetos----->
+      <section class="section_projects">
+        <div class="container_title">
+          <p>my portifólio</p>
+          <h2>Projetos</h2>
+        </div>
+        <section class="menu_projects">
+          <button class="button_front button_menu_projects selection_projects">
+            Front end
+          </button>
+          <button class="button_design button_menu_projects">Design</button>
+        </section>
+
+        <div class="container_projects">
+          <div class="projects_front div_projects"></div>
+          <div class="projects_design div_projects"></div>
+        </div>
+        <section class="more_projects"><p>Ver mais projetos</p></section>
+      </section>
 
       <!----conteúdo mensagem---->
 
@@ -283,8 +312,7 @@
     <!------javascript--------->
 
     <script src="js/http.js"></script>
-    <script src="js/skills.js"></script>
-    <script src="js/projects.js"></script>
+    <script src="js/skillsWithProjects.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animation.js"></script>
   </body>

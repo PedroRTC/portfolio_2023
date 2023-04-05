@@ -18,6 +18,7 @@
   background-color: #343232;
   border-radius: 10px;
   border-bottom: 2px solid #fdc971;
+  cursor: pointer;
 }
 
 .services {
@@ -40,8 +41,7 @@
   align-items: center;
   color: #fdc971;
 }
-.services i{
-
+.services i {
   font-size: 16pt;
   padding: 3px;
 }
