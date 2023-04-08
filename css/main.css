@@ -109,12 +109,13 @@ header {
   position: relative;
   width: 30px;
   height: 30px;
-  transform: translateX(16px) translateY(-3px);
+  transform: translateX(16px) translateY(-7px);
   z-index: -1;
 }
 
 .title_logo {
-  letter-spacing: 2px;
+  font-size: 14pt;
+  letter-spacing: 1px;
 }
 
 .container_buttons_top {
@@ -318,4 +319,66 @@ header {
   border-radius: 20px;
   letter-spacing: 2px;
   color: #fdc971;
+}
+
+footer{
+  width:100% ;
+  height:230px ;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #0d0902;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.container_logo_footer{
+   display: flex;
+   font-size: 16pt;
+   margin-left: -20px;
+   font-family: 'Josefin Sans', sans-serif ;
+}
+
+.img_logo_footer{
+  width:30px ;
+  transform: translateX(17px) translateY(-7px);
+}
+
+
+.networks_footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.item_network_footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:40px;
+  height:40px;
+  color: #fda100;
+  background-color: #343232;
+  border-radius: 50%;
+  font-size: 12pt;
+}
+
+.item_network_footer:hover{
+  background-color: #fda100;
+  color: black;
+}
+
+.item_network_footer i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16pt;
+}
+
+.cop{
+  letter-spacing: 1px;
+  font-size: 10pt;
+  color: #fda00060;
 }

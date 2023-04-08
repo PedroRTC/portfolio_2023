@@ -3,7 +3,17 @@
 
 {
     "name":"abrigo casa dos anjos",
-    "img" : "img/projects/tasks.png",
+    "img" : "img/projects/casa-dos-anjos.png",
+    "category":"Front end",
+    "repository" :"",
+    "demo" : "",
+    "iframe" : ""
+},
+
+
+{
+    "name":"Gold play plataforma de filmes",
+    "img" : "img/projects/gold-play.png",
     "category":"Front end",
     "repository" :"",
     "demo" : "",
@@ -54,15 +64,8 @@
     "repository" :"",
     "demo" : "",
     "iframe" : ""
-},
-
-{
-    "name":"Gold play plataforma de filmes",
-    "img" : "img/projects/gold-play.png",
-    "category":"Front end",
-    "repository" :"",
-    "demo" : "",
-    "iframe" : ""
 }
+
+
 
 ]

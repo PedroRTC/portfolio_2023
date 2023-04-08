@@ -109,7 +109,6 @@
   text-decoration: underline;
 }
 
-
 @media screen and (max-width: 1050px) {
   .section_projects {
     margin: auto;
@@ -121,5 +120,11 @@
 
   .div_projects {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container_projects {
+    height: 820px;
   }
 }

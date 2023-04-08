@@ -98,6 +98,9 @@ function moreProjects() {
   }
 
   function seeLessProjects() {
+    if (window.screen.width <= 500) {
+      container_projects.style.height = "820px";
+    }
     container_projects.style.height = "270px";
     more_projects.innerHTML = `<p>Ver Mais Projetos</p><i class="bi bi-arrow-right-short bi-arrow-project"></i>`;
     more_projects.addEventListener("click", seeMoreProjects);
