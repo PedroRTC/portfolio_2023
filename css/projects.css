@@ -91,6 +91,8 @@
 .more_projects {
   margin: auto;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: #fdc971;
   cursor: pointer;
@@ -101,16 +103,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
   letter-spacing: 1px;
 }
-.more_projects:hover {
+.more_projects p:hover {
   text-decoration: underline;
 }
 
-.more_projects i {
-  font-size: 14pt;
-}
 
 @media screen and (max-width: 1050px) {
   .section_projects {

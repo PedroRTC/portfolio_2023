@@ -41,7 +41,7 @@
   align-items: center;
   color: #fdc971;
 }
-.services i {
-  font-size: 16pt;
-  padding: 3px;
+
+.services p:hover{
+  text-decoration:underline;
 }

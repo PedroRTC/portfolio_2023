@@ -1,18 +1,15 @@
 let mySkills = [];
-let myProjects=[]
+let myProjects = [];
 
 let container_skills = document.querySelector(".container_skills");
-let projects_front=document.querySelector(".projects_front")
-let container_projects=document.querySelector(".container_projects")
-let more_projects=document.querySelector(".more_projects p")
-
+let projects_front = document.querySelector(".projects_front");
+let more_projects = document.querySelector(".more_projects p");
 
 async function initializeSkills() {
   mySkills = await respSkills();
-  myProjects = await respProjects()
+  myProjects = await respProjects();
   generateSkills();
-  generateProjects()
-
+  generateProjects();
 }
 
 initializeSkills();
@@ -23,7 +20,7 @@ function createElementWithClass(type, elementClass) {
   return element;
 }
 
-function generateSkills() { 
+function generateSkills() {
   mySkills.map((skills) => {
     let item_skills = createElementWithClass("div", "item_skills");
     let name_skills = createElementWithClass("p", "name_skills");
@@ -49,95 +46,63 @@ function generateSkills() {
   });
 }
 
-function generateProjects(){
-  myProjects.map(projects=>{
-     let item_projects=createElementWithClass("div","item_projects")
-     let info_projects=createElementWithClass("div","info_projects")
-     let category=createElementWithClass('h4',"category")
-     let repository=createElementWithClass("a","link")
-     let demo=createElementWithClass("a","link")
-     let article=createElementWithClass("a","link")
+function generateProjects() {
+  myProjects.map((projects) => {
+    let item_projects = createElementWithClass("div", "item_projects");
+    let info_projects = createElementWithClass("div", "info_projects");
+    let category = createElementWithClass("h4", "category");
+    let repository = createElementWithClass("a", "link");
+    let demo = createElementWithClass("a", "link");
+    let article = createElementWithClass("a", "link");
 
-     item_projects.style.backgroundImage=`url(${projects.img})`
-     category.textContent=projects.category
-     repository.textContent="Repositorio"
-     demo.textContent="Link demo"
-     article.textContent=projects.name
-     info_projects.appendChild(category)
-     info_projects.appendChild(repository)
-     info_projects.appendChild(demo)
-     info_projects.appendChild(article)
+    item_projects.style.backgroundImage = `url(${projects.img})`;
+    category.textContent = projects.category;
+    repository.textContent = "Repositorio";
+    demo.textContent = "Link demo";
+    article.textContent = projects.name;
+    info_projects.appendChild(category);
+    info_projects.appendChild(repository);
+    info_projects.appendChild(demo);
+    info_projects.appendChild(article);
 
-     item_projects.appendChild(info_projects)
+    item_projects.appendChild(info_projects);
 
+    projects_front.appendChild(item_projects);
 
-    projects_front.appendChild(item_projects)
-
-    
-       
-  cardEffectProjects(item_projects,info_projects)
-     
-
-
-  })
+    cardEffectProjects(item_projects, info_projects);
+  });
 }
 
-
-
-function cardEffectProjects(item_projects,info_projects){
-
-  item_projects.addEventListener("mouseover",(event)=>{
-    info_projects.style.transform="translateY(0%)"
+function cardEffectProjects(item_projects, info_projects) {
+  item_projects.addEventListener("mouseover", (event) => {
+    info_projects.style.transform = "translateY(0%)";
     setTimeout(() => {
-      info_projects.style.gap="10px"
+      info_projects.style.gap = "10px";
     }, 200);
-
-    })
-      item_projects.addEventListener("mouseout",(event)=>{
-        info_projects.style.transform="translateY(100%)"
-        setTimeout(() => {
-          info_projects.style.gap="0px"
-        }, 200);
-
-      })
+  });
+  item_projects.addEventListener("mouseout", (event) => {
+    info_projects.style.transform = "translateY(100%)";
+    setTimeout(() => {
+      info_projects.style.gap = "0px";
+    }, 200);
+  });
 }
-   
-function moreProjects (){
-  more_projects.addEventListener("click" , seeMoreProjects)
-  function seeMoreProjects(){
-    container_projects.style.height="auto"
-    more_projects.innerHTML=`<i class="bi bi-arrow-left-short"></i>Menos Projetos`
-    more_projects.removeEventListener("click",seeMoreProjects)
-    more_projects.addEventListener("click",seeLessProjects)
 
-
+function moreProjects() {
+  more_projects.addEventListener("click", seeMoreProjects);
+  function seeMoreProjects() {
+    container_projects.style.height = "auto";
+    more_projects.innerHTML = `<i class="bi bi-arrow-left-short"></i>Menos Projetos`;
+    more_projects.removeEventListener("click", seeMoreProjects);
+    more_projects.addEventListener("click", seeLessProjects);
   }
 
-  function seeLessProjects(){
-    container_projects.style.height="270px"
-    more_projects.innerHTML=`Ver Mais Projetos<i class="bi bi-arrow-right-short"></i>`
-    more_projects.addEventListener("click",seeMoreProjects)
-    more_projects.removeEventListener("click",seeLessProjects)
+  function seeLessProjects() {
+    container_projects.style.height = "270px";
+    more_projects.innerHTML = `Ver Mais Projetos<i class="bi bi-arrow-right-short"></i>`;
+    more_projects.addEventListener("click", seeMoreProjects);
+    more_projects.removeEventListener("click", seeLessProjects);
   }
-   
 }
 
-moreProjects()
-
-
-function categoryProjects(){
- let button_front=document.querySelector(".button_front")
- let button_design=document.querySelector(".button_design")
-
- button_design.addEventListener("click",()=>{
-   container_projects.scrollBy(+300,0)
-  
- })
-
- button_front.addEventListener("click",()=>{
-  container_projects.scrollBy(-300,0)
-  
-})
-}
-
-categoryProjects()
+moreProjects();

@@ -62,6 +62,14 @@ p {
   font-family: "Dosis", sans-serif;
 }
 
+.bi-arrow-right-short{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16pt;
+  padding: 3px ;
+}
+
 .container_title {
   margin: auto;
   text-align: center;
