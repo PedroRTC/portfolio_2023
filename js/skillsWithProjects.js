@@ -3,7 +3,7 @@ let myProjects = [];
 
 let container_skills = document.querySelector(".container_skills");
 let projects_front = document.querySelector(".projects_front");
-let more_projects = document.querySelector(".more_projects p");
+let more_projects = document.querySelector(".more_projects");
 
 async function initializeSkills() {
   mySkills = await respSkills();
@@ -92,14 +92,14 @@ function moreProjects() {
   more_projects.addEventListener("click", seeMoreProjects);
   function seeMoreProjects() {
     container_projects.style.height = "auto";
-    more_projects.innerHTML = `<i class="bi bi-arrow-left-short"></i>Menos Projetos`;
+    more_projects.innerHTML = `<i class="bi bi-arrow-left-short bi-arrow-project"></i><p>Menos Projetos</p>`;
     more_projects.removeEventListener("click", seeMoreProjects);
     more_projects.addEventListener("click", seeLessProjects);
   }
 
   function seeLessProjects() {
     container_projects.style.height = "270px";
-    more_projects.innerHTML = `Ver Mais Projetos<i class="bi bi-arrow-right-short"></i>`;
+    more_projects.innerHTML = `<p>Ver Mais Projetos</p><i class="bi bi-arrow-right-short bi-arrow-project"></i>`;
     more_projects.addEventListener("click", seeMoreProjects);
     more_projects.removeEventListener("click", seeLessProjects);
   }
