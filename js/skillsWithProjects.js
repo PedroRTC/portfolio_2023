@@ -98,7 +98,7 @@ function moreProjects() {
   }
 
   function seeLessProjects() {
-    if (window.screen.width <= 500) {
+    if (window.screen.width <= 607) {
       container_projects.style.height = "820px";
     }
     container_projects.style.height = "270px";

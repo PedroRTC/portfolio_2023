@@ -123,7 +123,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 607px) {
   .container_projects {
     height: 820px;
   }
