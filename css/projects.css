@@ -29,10 +29,10 @@
 .container_projects {
   display: flex;
   margin: auto;
-  align-items: center;
   width: 100%;
   height: 270px;
   overflow: hidden;
+
   scroll-snap-type: x mandatory;
 }
 
