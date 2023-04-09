@@ -45,6 +45,7 @@
     <main>
       <!--conteúdo cabeçalho----->
       <header>
+        <a id="HOME"></a>
         <section class="menu_top">
           <div class="container_logo">
             <img src="img/logo/logo-topo.png" class="img_logo_header" alt="" />
@@ -57,7 +58,7 @@
           </div>
         </section>
 
-        <div class="container_presentation_header">
+        <div class="container_presentation_header" data-anime="left">
           <p>Olá, eu sou</p>
           <h1 class="title_name">Pedro Ronaldo</h1>
           <p>front end developer</p>
@@ -68,7 +69,7 @@
         </div>
 
         <div class="container_profile">
-          <section class="section_networks d_flex">
+          <section class="section_networks d_flex" data-anime="down">
             <a href=""
               ><img src="img//networks/linkedin-header.png" alt=""
             /></a>
@@ -77,12 +78,12 @@
               ><img src="img/networks/instagram-header.png" alt=""
             /></a>
           </section>
-          <section class="section_img_profile d_flex">
+          <section class="section_img_profile d_flex" data-anime="up">
             <img src="img/profile/perfil.png" class="img_profile" alt="" />
           </section>
 
-          <section class="section_more">
-            <a href="">
+          <section class="section_more" data-anime="down">
+            <a href="#ABOUT">
               <p class="title_more color">Saiba mais</p>
               <i class="bi bi-chevron-double-down"></i>
             </a>
@@ -91,22 +92,22 @@
 
         <section class="section_menu_bottom">
           <nav class="menu_bottom d_flex">
-            <a href="#" class="items_menu_bottom"
+            <a href="#HOME" class="items_menu_bottom"
               ><img src="img/menu/home.png" alt=""
             /></a>
-            <a href="#" class="items_menu_bottom"
+            <a href="#ABOUT" class="items_menu_bottom"
               ><img src="img/menu/sobre-mim.png" alt=""
             /></a>
-            <a href="#" class="items_menu_bottom"
+            <a href="#SKILLS" class="items_menu_bottom"
               ><img src="img/menu/habilidade.png" alt=""
             /></a>
-            <a href="#" class="items_menu_bottom"
+            <a href="#SERVICES" class="items_menu_bottom"
               ><img src="img/menu/serviços.png" alt=""
             /></a>
-            <a href="#" class="items_menu_bottom"
+            <a href="#PROJECTS" class="items_menu_bottom"
               ><img src="img/menu/portfolio.png" alt=""
             /></a>
-            <a href="" class="items_menu_bottom"
+            <a href="#MENSSAGE" class="items_menu_bottom"
               ><img src="img/menu/mensagem.png" alt=""
             /></a>
           </nav>
@@ -115,13 +116,14 @@
 
       <!---conteúdo sobre min---->
       <section class="section_about_me all_sections">
-        <div class="container_title">
+        <a id="ABOUT"></a>
+        <div class="container_title" data-anime="down">
           <p>introduce men</p>
           <h2>Sobre mim</h2>
         </div>
 
         <section class="container_about_me container_display">
-          <div class="description__about">
+          <div class="description__about" data-anime="left">
             <section class="menu_description">
               <div class="item_menu_description selection button_left">
                 <img src="img/menu/sobre-mim.png" alt="" />
@@ -140,9 +142,6 @@
 
             <section class="carrossel_description carrossel">
               <div class="information">
-                <section class="anchor_description">
-                  <a id="INFORMATION">INFORMATION</a>
-                </section>
                 <p>
                   <i class="bi bi-person"></i><span>nome:</span> Pedro Ronaldo
                 </p>
@@ -165,9 +164,6 @@
               </div>
 
               <div class="qualifications">
-                <section class="anchor_description">
-                  <a id="QUALIFICATIONS">QUALIFICATIONS</a>
-                </section>
                 <h4>Formação</h4>
                 <hr />
                 <p>
@@ -196,9 +192,6 @@
                 </p>
               </div>
               <div class="history">
-                <section class="anchor_description">
-                  <a id="HISTORY">HISTORY</a>
-                </section>
                 <h4>História</h4>
                 <hr />
                 <p>
@@ -227,7 +220,7 @@
             </section>
           </div>
 
-          <div class="container_about_img">
+          <div class="container_about_img" data-anime="up">
             <p>
               Desenvolvedor Front End com habilidades de resolução de problemas,
               e desenvolvimento de interfaces de paginas web.
@@ -241,14 +234,15 @@
 
       <!--conteúdo habilidades--->
       <section class="section_skills all_sections">
-        <div class="container_title">
+        <a id="SKILLS"></a>
+        <div class="container_title" data-anime="down">
           <p>my skills</p>
           <h2>habilidades</h2>
         </div>
 
         <div class="container_skills"></div>
-        <h4>Ferramentas</h4>
-        <section class="tools">
+        <h4 data-anime="left">Ferramentas</h4>
+        <section class="tools" data-anime="up">
           <img src="img/tools/vscode.png" alt="" />
           <img src="img/tools/github-desktop.png" alt="" />
           <img src="img/tools/github.png" alt="" />
@@ -259,13 +253,14 @@
 
       <!----conteúdo serviços---->
       <section class="section_services all_sections">
-        <div class="container_title">
+        <a id="SERVICES"></a>
+        <div class="container_title" data-anime="down">
           <p>my services</p>
           <h2>Serviços</h2>
         </div>
 
         <div class="container_services container_display">
-          <div class="front item_services">
+          <div class="front item_services" data-anime="up">
             <section class="services">
               <h4>Desenvolvimento <br />Front end</h4>
               <p>
@@ -273,7 +268,7 @@
               </p>
             </section>
           </div>
-          <div class="design item_services">
+          <div class="design item_services" data-anime="up">
             <section class="services">
               <h4>
                 Design<br />
@@ -289,29 +284,30 @@
 
       <!----conteúdo contato----->
       <section class="section_contact container_display">
-        <div class="contact">
+        <div class="contact" data-anime="down">
           <a><i class="bi bi-whatsapp"></i>(85)98899-6987</a>
         </div>
       </section>
 
       <!---conteúdo projetos----->
       <section class="section_projects">
-        <div class="container_title">
+        <a id="PROJECTS"></a>
+        <div class="container_title" data-anime="down">
           <p>my portifólio</p>
           <h2>Projetos</h2>
         </div>
-        <section class="menu_projects">
+        <section class="menu_projects" data-anime="left">
           <button class="button_menu_projects selection_projects button_left">
             Front end
           </button>
           <button class="button_menu_projects button_right">Design</button>
         </section>
 
-        <div class="container_projects carrossel">
+        <div class="container_projects carrossel" data-anime="up">
           <div class="projects_front div_projects"></div>
           <div class="projects_design div_projects"></div>
         </div>
-        <section class="more_projects">
+        <section class="more_projects" data-anime="up">
           <p>Ver mais projetos</p>
           <i class="bi bi-arrow-right-short bi-arrow-project"></i>
         </section>
@@ -319,15 +315,16 @@
 
       <!----conteúdo mensagem---->
       <section class="section_menssage">
-        <div class="container_title">
+        <a id="MENSSAGE"></a>
+        <div class="container_title" data-anime="down">
           <p>yor menssage</p>
           <h2>Contato</h2>
         </div>
         <div class="container_menssage">
           <div class="contacts_menssage">
-            <h4>Fale comigo</h4>
+            <h4 data-anime="down">Fale comigo</h4>
 
-            <a class="item_contacts" href="">
+            <a class="item_contacts" href="" data-anime="down">
               <img src="img/contacts/o-email.png" alt="" />
               <h3>E-mail</h3>
               <p>pedro06portfolio@gmail.com</p>
@@ -338,7 +335,7 @@
               </p>
             </a>
 
-            <a class="item_contacts" href="">
+            <a class="item_contacts" href="" data-anime="left">
               <img src="img/contacts/whatsapp (1).png" alt="" />
               <h3>Whatsapp</h3>
               <p>(85)988996987</p>
@@ -349,7 +346,7 @@
               </p>
             </a>
 
-            <a class="item_contacts" href="">
+            <a class="item_contacts" href="" data-anime="up">
               <img src="img/contacts/linkedin (1).png" alt="" />
               <h3>Linkedin</h3>
               <p>linkedin.com/in/pedro-ronaldo</p>
@@ -360,7 +357,7 @@
               </p>
             </a>
           </div>
-          <div class="form_menssage">
+          <div class="form_menssage" data-anime="up">
             <form action="">
               <h4>Deixe sua mensagem</h4>
 
@@ -387,12 +384,12 @@
 
       <!----conteúdo rodapé------>
       <footer>
-        <div class="container_logo_footer">
+        <div class="container_logo_footer" data-anime="down">
           <img src="img/logo/logo-topo.png" class="img_logo_footer" alt="" />
           <span class="title_logo">Pedro</span>
         </div>
 
-        <section class="networks_footer">
+        <section class="networks_footer" data-anime="left">
           <a href="" class="item_network_footer"
             ><i class="fa fa-whatsapp" aria-hidden="true"></i
           ></a>

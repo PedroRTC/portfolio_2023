@@ -1,3 +1,5 @@
+let items_menu_bottom=document.querySelectorAll(".items_menu_bottom")
+
 let carrossel = document.querySelectorAll(".carrossel");
 
 let carrossel_description = document.querySelector(".carrossel_description");
@@ -9,6 +11,14 @@ let item_menu_projects = document.querySelectorAll(".menu_projects button");
 let button_left = document.querySelectorAll(".button_left");
 let button_right = document.querySelectorAll(".button_right");
 let button_center = document.querySelector(".button_center");
+
+
+items_menu_bottom.forEach(item_bottom => {
+   item_bottom.addEventListener("click",()=>{
+    let class_menu_bottom="class_menu_bottom"
+    selectItem(item_bottom,class_menu_bottom)
+   })
+});
 
 item_menu_description.forEach((item_description) => {
   item_description.addEventListener("click", effectDescriptionAbout);
@@ -25,17 +35,17 @@ item_menu_projects.forEach((item_projects) => {
   });
 });
 
-function selectItem(item, classItem) {
-  item.classList.add(classItem);
-  item.addEventListener("click", removeItem(item, classItem));
+function selectItem(it, classItem) {
+  it.classList.add(classItem);
+  it.addEventListener("click", removeItem(it, classItem));
 }
 
-function removeItem(item, classItem) {
+function removeItem(it, classItem) {
   let itemSelection = document.querySelectorAll(`.${classItem}`);
   for (const i of itemSelection) {
     if (i) {
       i.classList.remove(classItem);
-      item.classList.add(classItem);
+      it.classList.add(classItem);
     }
   }
 }

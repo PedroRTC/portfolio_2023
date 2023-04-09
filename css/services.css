@@ -19,7 +19,6 @@
   border-radius: 10px;
   border-bottom: 2px solid #fdc971;
   cursor: pointer;
-  transition: all 0.3s;
 }
 
 .container_services div:hover {

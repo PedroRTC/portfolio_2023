@@ -60,6 +60,7 @@
   background-color: #343232;
   border-radius: 10px;
   display: flex;
+  align-items: center;
   scroll-snap-type: x mandatory;
   overflow: hidden;
   gap: 20px;
