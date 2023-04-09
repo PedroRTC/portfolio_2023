@@ -57,9 +57,6 @@ function categoryItemsMenu(left, right, container, center) {
 
     right[index].addEventListener("click", () => {
       container[index].scrollBy(1000, 0);
-      if (container[index].scrollLeft == "1000") {
-        container[index].scrollBy(0, 0);
-      }
     });
   }
 
@@ -68,8 +65,8 @@ function categoryItemsMenu(left, right, container, center) {
       carrossel_description.scrollBy(300, 0);
     } else if (carrossel_description.scrollLeft == "300") {
       carrossel_description.scrollBy(0, 0);
-    } else if (carrossel_description.scrollLeft >= "1000") {
-      carrossel_description.scrollBy(-600, 0);
+    } else if (carrossel_description.scrollLeft >= "650") {
+      carrossel_description.scrollBy(-300, 0);
     }
   });
 }

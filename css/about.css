@@ -38,7 +38,6 @@
   padding: 10px;
   cursor: pointer;
   border: 1px solid #343232;
- 
 }
 
 .item_menu_description:hover {
@@ -132,7 +131,6 @@
 
 .container_about_img {
   margin: auto;
-
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -177,7 +175,7 @@
 
 @media screen and (max-width: 950px) {
   main {
-    width: 90%
+    width: 90%;
   }
 
   .section_menu_bottom {

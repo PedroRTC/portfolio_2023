@@ -51,13 +51,11 @@
   color: #fdc971;
   font-size: 12pt;
   letter-spacing: 1px;
- 
 }
 
-.enter_contact:hover{
+.enter_contact:hover {
   text-decoration: underline;
 }
-
 
 .form_menssage {
   margin: auto;
