@@ -41,6 +41,11 @@
   letter-spacing: 1pt;
 }
 
+.item_contacts:hover {
+  transition: all 0.5s;
+  background-color: #0d0902;
+}
+
 .item_contacts img {
   width: 30px;
 }
@@ -115,6 +120,14 @@ form button {
   background-color: #fdc971;
   letter-spacing: 1px;
   font-weight: 600;
+  transition: all 0.3s;
+  border: 2px solid #fdc971;
+}
+
+form button:hover {
+  border: 2px solid #343232;
+  background: #231f20;
+  color: #fda100;
 }
 
 @media screen and (max-width: 750px) {
